@@ -295,7 +295,7 @@ static int FixupAppDir(const std::string& path, mode_t mode, uid_t uid, gid_t gi
         }
     }
 
-    return RestoreconRecursive(path);
+    return OK;
 }
 
 int PrepareAppDirFromRoot(const std::string& path, const std::string& root, int appUid,
